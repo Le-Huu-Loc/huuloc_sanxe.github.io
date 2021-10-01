@@ -1,0 +1,61 @@
+.show-tl {
+    display: block;
+}
+.cauhoi {
+    width: 90%;
+    margin: 20px auto;
+}
+.cauhoi ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+}
+.cauhoi ul .item {
+    list-style-type: none;
+    padding: 25px 0;
+    font-weight: 600;
+    font-size: 22px;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    width: 20%;
+    text-align: center;
+}
+.cauhoi ul .item:not(:last-child) {
+    margin-right: 10px;
+}
+.item-click {
+    background: #162d6c !important;
+    color: #fff;
+}
+.cauhoi > ul li:hover {
+    opacity: 0.5;
+}
+
+.traloi-item {
+    overflow: hidden;
+}
+.traloi-item ul li {
+    list-style-type: none;
+    padding: 0 50px;
+    border: 1px solid #ccc;
+    text-align: justify;
+    width: 100%;
+}
+.traloi-item ul li .item__mota:hover {
+    opacity: 0.6;
+}
+.traloi-item ul li .item__show {
+    display: none;
+    height: 100%;
+    transition: all 0.5s ease;
+}
+.item__mota {
+    display: flex;
+    align-items: center;
+}
+.item__mota i {
+    padding-right: 10px;
+    font-weight: 500;
+    font-size: 20px;
+}

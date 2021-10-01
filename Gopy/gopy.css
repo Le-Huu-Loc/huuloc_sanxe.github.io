@@ -1,0 +1,43 @@
+.gopy {
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.gopy .gopy-img {
+    width: 60%;
+    background-image: url(../images/background-contact.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.gopy-contact {
+    width: 40%;
+    overflow: hidden;
+}
+.gopy-contact p {
+    margin: 0 0 30px 0;
+}
+.form-group input,
+.form-group textarea {
+    max-width: 97%;
+    min-width: 97%;
+    margin-bottom: 10px;
+    max-height: 100px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    padding: 10px 0 10px 10px;
+}
+.form-group textarea {
+    min-height: 100px;
+}
+.form-submid input[type="submit"] {
+    padding: 12px 50px;
+    cursor: pointer;
+    float: right;
+    border: 1px solid blue;
+    color: blue;
+    background: none;
+}
+.form-submid input[type="submit"]:hover {
+    background: rgba(190, 234, 255, 0.7);
+}

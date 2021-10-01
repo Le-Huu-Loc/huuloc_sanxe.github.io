@@ -1,0 +1,84 @@
+.card-container {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #161623;
+}
+.card-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#f00, #f0f);
+    clip-path: circle(20% at 10% 10%);
+}
+.card-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#2196f3, #e91e63);
+    clip-path: circle(20% at right 70%);
+}
+.card-container .card {
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 00, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 1;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+}
+.card-container .card:nth-child(1) {
+    background-image: url(../images/cv.jpg);
+    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.95;
+}
+.card-container .card .content {
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+}
+.card-container .card:hover .content {
+    transform: translateY(0);
+    opacity: 1;
+}
+.card-container .card .content h2 {
+    position: absolute;
+    top: -175px;
+    right: -20%;
+    font-size: 8em;
+    color: rgba(41, 36, 36, 0.7);
+    pointer-events: none;
+}
+.card-container .card .content h3 {
+    font-size: 1.8em;
+    color: #000;
+    z-index: 1;
+}
+.card-container .card .content p {
+    font-size: 1.3em;
+    color: #000;
+    font-weight: 300px;
+}

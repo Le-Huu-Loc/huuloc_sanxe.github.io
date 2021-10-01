@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./cauhoi.css">
+    <link rel="stylesheet" href="../font-icon/themify-icons/themify-icons.css">
+    <title>Câu hỏi thường gặp</title>
+</head>
+
+<body>
+    <div class="cauhoi">
+        <h1>Những câu hỏi thường gặp</h1>
+        <div class="cauhoi-item">
+            <ul>
+                <li class="item item-click">Dịch vụ</li>
+                <li class="item">Giá thành</li>
+                <li class="item">Kỹ thuật sử dụng xe</li>
+                <li class="item">Sản phẩm</li>
+                <li class="item">Phụ tùng</li>
+            </ul>
+        </div>
+        <div class="traloi-item">
+            <ul>
+                <li>
+                    <div class="item__mota">
+                        <i class="ti-arrow-right"></i>
+                        <h2> Việc đăng ký bảo dưỡng, sửa chữa qua mạng</h2>
+                    </div>
+                    <div class="item__show">Khách hàng có nhu cầu đăng ký bảo dưỡng tại các trung tâm bảo hành trực
+                        thuộc công ty Yamaha,
+                        có
+                        thể thực hiện được bằng cách truy cập vào trang Web của công ty: www.sanxe.com.vn Chú
+                        ý:
+                        Khi đăng ký, đề nghị khách hàng điền đầy đủ thông tin theo yêu cầu vào các ô tương ứng: Họ
+                        tên,
+                        điện thoại, thời gian đăng ký (ngày/ tháng/ năm; giờ), địa chỉ trung tâm khách hàng muốn
+                        đăng
+                        ký. Khi nhận được đăng ký của khách hàng, nhân viên kỹ thuật sẽ liên lạc với khách hàng (tối
+                        đa
+                        là sau 7 ngày) để xác nhận lại thời gian chính xác khách hàng có thể đem xe tới trung tâm.
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        const cauhoiElement = document.querySelector('div.item__mota')
+        const traloiElement = document.querySelector('.traloi-item ul li .item__show')
+        console.log(cauhoiElement)
+        console.log(traloiElement)
+        cauhoiElement.addEventListener('click', () => {
+            traloiElement.classList.toggle('show-tl')
+        })
+    </script>
+</body>
+
+</html>
