@@ -5,11 +5,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./gopy.css">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../font-icon/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="gopy.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Góp ý</title>
 </head>
 
 <body>
+    <div class="header">
+        <div class="header__topnav">
+            <a href="../index.html"><img src="../images/logo-home.PNG" alt="" class="topnav__logo"></a>
+            <div class="topnav__navbar">
+                <ul>
+                    <li><a href="">Thăm dò ý kiến khách hàng</a></li>
+                    <li><a href="">Câu hỏi thường gặp</a></li>
+                    <li><a href="">Góp ý</a></li>
+                    <li><a class="navbar--login">Tài khoản</a></li>
+                </ul>
+            </div>
+            <div class="topnav_menu"><i class="ti-menu"></i></div>
+        </div>
+        <div class="header__botnav">
+            <ul class="show-menu">
+                <li><a href="">Sản phẩm</a>
+                    <ul class="menu-subnav">
+                        <li>
+                            <a href="">YAMAHA</a>
+                        </li>
+                        <li>
+                            <a href="">Honda</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="">Khuyến mãi</a></li>
+                <li><a href="">Dịch vụ</a></li>
+                <li><a href="">Tin tức</a></li>
+                <li><a href="about.html">Về chúng tôi</a></li>
+            </ul>
+            <div class="botnav__search">
+                <input type="text" placeholder="Tìm kiếm...">
+                <a href=""><i class="ti-search"></i></a>
+            </div>
+            <div class="botnav__cartHide">
+                <div class="cart__soluong">0</div>
+                <i class="ti-shopping-cart"></i>
+            </div>
+        </div>
+    </div>
+
+    <!--About-->
+
     <div class="gopy">
         <div class="gopy-img"></div>
         <div class="gopy-contact">
@@ -28,6 +75,214 @@
             </form>
         </div>
     </div>
+
+
+
+    <div class="footer">
+        <div class="footer__top">
+            <div class="footer__top--left">
+                <fieldset>
+                    <legend>Network</legend>
+                    <a href=""><img src="../images/ico-fb.png" alt="Connect facebook"></a>
+                    <a href=""><img src="../images/ico-instagram.png" alt="Connect instagram"></a>
+                    <a href=""><img src="../images/ico-youtube.png" alt="Connect youtube"></a>
+                    <a href=""><img src="../images/ico-tiktok.png" alt="Connect tiktok"></a>
+                </fieldset>
+            </div>
+            <div class="footer__top--right">
+                <ul>
+                    <li><a href="">Liên hệ</a></li>
+                    <li><a href="">Tìm kiếm</a></li>
+                    <li><a href="">E-learning</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="">Hỏi đáp</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__bottom--left">
+                <ul>
+                    <li>
+                        <h4>CÔNG TY TNHH YAMAHA MOTOR VIỆT NAM</h4>
+                    </li>
+                    <li>Số GCNĐKDN: 0100774342</li>
+                    <li>Cấp lần đầu: Ngày 22/09/2008</li>
+                    <li>Đăng ký thay đỗi lần thứ 10: Ngày 27/03/2020</li>
+                    <li>Cơ quan cấp: Sở kế hoạch và đầu tư TP Hà Nội</li>
+                </ul>
+            </div>
+            <div class="footer__bottom--right">
+                <h3>Thông tin liên hệ</h3>
+                <ul>
+                    <a href="">
+                        <li><i class="ti-mobile"> Hotline: 0983395820</i></li>
+                    </a>
+                    <a href="">
+                        <li><i class="ti-email"> Email: huuloc@gmail.com</i></li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!--Login form here-->
+    <div class="formlogin">
+        <div class="container">
+            <i class="ti-close login--close"></i>
+            <input type="checkbox" id="flip">
+            <div class="cover">
+                <div class="front">
+                    <img src="../images/logo3.PNG" alt="Image Login error">
+                    <div class="text">
+                        <span class="text-1">Every new friend is a <br> new adventure</span>
+                        <span class="text-2">Let's get connected</span>
+                    </div>
+                </div>
+                <div class="back">
+                    <img class="backImg" src="../images/logo2.PNG" alt="Image Signup error">
+                    <div class="text">
+                        <span class="text-1">Complete miles of journey <br> with one step</span>
+                        <span class="text-2">Let's get started</span>
+                    </div>
+                </div>
+            </div>
+            <div class="forms">
+                <div class="form-content">
+                    <div class="login-form">
+                        <div class="title">Đăng nhập</div>
+                        <form action="#">
+                            <div class="input-boxes">
+                                <div class="input-box">
+                                    <i class="fas fa-envelope"></i>
+                                    <input type="text" placeholder="Nhập email" required>
+                                </div>
+                                <div class="input-box">
+                                    <i class="fas fa-lock"></i>
+                                    <input type="password" placeholder="Nhập mật khẩu" required>
+                                </div>
+                                <div class="text"><a href="#">Quên mật khẩu?</a></div>
+                                <div class="button input-box">
+                                    <input type="submit" value="Đăng nhập">
+                                </div>
+                                <div class="text sign-up-text">Bạn chưa có tài khoản? <label for="flip">Đăng ký
+                                        ngay</label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="signup-form">
+                        <div class="title">Đăng ký</div>
+                        <form action="#">
+                            <div class="input-boxes">
+                                <div class="input-box">
+                                    <i class="fas fa-envelope"></i>
+                                    <input type="text" placeholder="Nhập email" required>
+                                </div>
+                                <div class="input-box">
+                                    <i class="fas fa-lock"></i>
+                                    <input type="password" placeholder="Nhập mật khẩu" required>
+                                </div>
+                                <div class="input-box">
+                                    <i class="fas fa-lock"></i>
+                                    <input type="password" placeholder="Nhập lại mật khẩu" required>
+                                </div>
+                                <div class="button input-box">
+                                    <input type="submit" value="Đăng ký">
+                                </div>
+                                <div class="text sign-up-text">Bạn đã có tài khoản? <label for="flip">Đăng nhập
+                                        ngay</label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="backtotop" id="backtotop"><i class="ti-angle-up"></i></div>
+    <script type="text/javascript" src="../js-animation/vanilla-tilt.js"></script>
+    <script>
+        $('#backtotop').click(function () {
+            $('html').animate({
+                scrollTop: 0
+            }, 1000);
+        });
+
+        $(window).scroll(function () {
+            if ($(this).scrollTop() != 0) {
+                $('#backtotop').fadeIn();
+            } else {
+                $('#backtotop').fadeOut();
+            }
+        })
+
+        //Show login form
+
+        const loginElement = document.querySelector('.navbar--login')
+        const loginFormElement = document.querySelector('.formlogin')
+        const closeLoginElement = document.querySelector('.login--close')
+        const formElement = document.querySelector('.container')
+
+        loginElement.addEventListener('click', function () {
+            loginFormElement.classList.add('show--login')
+        })
+        closeLoginElement.addEventListener('click', function () {
+            loginFormElement.classList.toggle('show--login')
+        })
+        formElement.addEventListener('click', function () {
+            loginFormElement.classList.toggle('show--login')
+        })
+        loginFormElement.addEventListener('click', function (e) {
+            loginFormElement.classList.toggle('show--login')
+            e.stopPropagation()
+        })
+        loginFormElement.addEventListener('click', function () {
+        })
+
+        //Show menu form reponsive
+        const headerMenu = document.querySelector('.topnav_menu')
+        const bottomMenu = document.querySelector('.header__botnav')
+        headerMenu.addEventListener('click', function () {
+            headerMenu.classList.toggle('show-menu')
+            bottomMenu.classList.toggle('show-menu')
+        })
+
+        //Scroll
+        window.addEventListener('scroll', reveal)
+        function reveal() {
+            let reveals = document.querySelectorAll('.reveal')
+            let scrollItem = document.querySelectorAll('.service__layout-item')
+
+            for (let i = 0; i < reveals.length; i++) {
+                let windownHeight = window.innerHeight;
+                let revalTop = reveals[i].getBoundingClientRect().top
+                let revalPoint = 150;
+
+                if (revalTop < windownHeight - revalPoint) {
+                    reveals[i].classList.add('scroll')
+                    for (let i = 0; i < scrollItem.length; i++) {
+                        scrollItem[i].classList.add('scroll-item')
+                    }
+                }
+                else {
+                    reveals[i].classList.remove('scroll')
+                    for (let i = 0; i < scrollItem.length; i++) {
+                        scrollItem[i].classList.remove('scroll-item')
+                    }
+                }
+            }
+        }
+
+
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+            max: 25,
+            speed: 400,
+            glare: true,
+            "max-glare": 1,
+        });
+    </script>
 </body>
 
 </html>
